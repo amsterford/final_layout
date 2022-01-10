@@ -1,0 +1,189 @@
+.footer {
+    display: block;
+    background-color: $color_dark;
+    background-image: url("../../images/bg_diagonal_cross.jpeg");
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    text-align: center;
+    &_stack {
+        display: inline-block;
+        max-width: 1000px;
+        padding: 0 20px;
+    }
+}
+
+.f-stack_top {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    height: 86px;
+    border-bottom: 1px solid $color_accent;
+}
+
+.f-logo {
+    flex: 0 0 220px;
+    position: relative;
+    &_text {
+        position: absolute;
+        top: 38px;
+        left: 72px;
+        font-family: Jellee;
+        font-style: normal;
+        font-size: 28px;
+        color: $color_active;
+    }
+    &_img {
+        position: absolute;
+        top: 20px;
+        left: 0px;
+        height: 40px;
+    }
+}
+
+.f-menu {
+    flex: 1 1 auto;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0px;
+    &_item {
+        margin: 0 25px;
+    }
+    & a, a:link, a:visited, a:active {
+        font-family: Cervo-Regular;
+        color: $color_accent;
+        font-size: 20px;
+        transition-duration: 500ms;
+    }
+    & a:hover {
+        color: $color_active;
+    }
+    & li:nth-child(4) {
+        margin-right: 0;
+    }
+}
+
+.f-stack_content {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding: 32px 0 20px;
+}
+
+.footer_title {
+    font-family: Cervo-Medium;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: left;
+    margin-bottom: 20px;
+    color: #dcdcdc;
+}
+
+.footer_text {
+    font-family: Cervo-Regular;
+    font-size: 18px;
+    line-height: 22px;
+    color: $color_footer-text;
+}
+
+.footer_about {
+    width: 50%;
+    text-align: left;
+    padding-right: 50px;
+}
+
+.footer_social {
+    display: flex;
+    flex-flow: row nowrap;
+    position: relative;
+    top: 0;
+    left: -10px;
+    margin-top: 16px;
+    li {
+        color: #dcdcdc;
+    }
+    img {
+        width: 50px;
+        opacity: 50%;
+        transition-duration: 500ms;
+        &:hover {
+            opacity: 100%;
+        }
+    }
+}
+
+.footer_services {
+    width: 25%;
+    text-align: left;
+    a:link, a:visited, a:active {
+        color: $color_footer-text;
+        font-family: Cervo-Regular;
+        transition-duration: 250ms;
+    }
+    a:hover {
+        color: #dcdcdc;
+        @extend %link_content;
+    }
+    &_list {
+        font-family: Cervo-Regular;
+        font-size: 18px;
+        line-height: 1.2;
+        color: #dcdcdc;
+    }
+}
+
+.footer_contacts {
+    width: 25%;
+    text-align: left;
+    color: #dcdcdc;
+    font-family: Cervo-Regular;
+    font-size: 18px;
+    &_icon {
+        display: inline-block;
+        width: 42px;
+        height: 42px;
+        background-color: $color_footer-text;
+        border-radius: 25%;
+        color: $color_dark;
+        margin: 0px 20px 10px 0;
+        padding-top: 5px;
+        text-align: center;
+    }
+    &_value {
+        vertical-align: middle;
+        display: inline-block;
+        position: relative;
+        top: -7px;
+        left: 0;
+        width: calc(100% - 62px);
+        // border: 1px solid;
+    }
+    a:link, a:visited, a:active {
+        color: $color_footer-text;
+        font-family: Cervo-Regular;
+        transition-duration: 250ms;
+    }
+    a:hover {
+        color: #dcdcdc;
+        @extend %link_content;
+    }
+}
+
+.footer_btm_line {
+    display: block;
+    position: relative;
+    background-color: #000;
+    height: 60px;
+    &_txt {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-family: Cervo-Regular;
+        font-size: 18px;
+        color: #dcdcdc;
+    }
+}
