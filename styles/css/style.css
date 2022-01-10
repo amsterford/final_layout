@@ -500,6 +500,9 @@ form {
   width: 100%;
   outline: 0;
 }
+.feedback-input::placeholder {
+  color: #222;
+}
 
 .feedback-input:focus {
   border-radius: 0 0 13px 13px;
@@ -512,7 +515,11 @@ textarea {
   font-family: Cervo-Regular;
   height: 150px;
   line-height: 150%;
+  color: #222;
   resize: vertical;
+}
+textarea::placeholder {
+  color: #47b9c5;
 }
 
 [type=submit] {
