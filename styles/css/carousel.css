@@ -1,0 +1,112 @@
+.carousel{
+  height: 320px;
+  width: 960px;
+  overflow-x: hidden;
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  border-radius: 13px;
+}
+  
+.carousel-inner{
+  height: 100%;
+  display: flex;
+  transition: all ease 1.5s;
+  background-color: #2b2b2b;
+}
+
+.carousel-item{
+  flex: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.slide_title{
+  font-size: 42px;
+  color: #dcdcdc;
+  opacity: 1;
+  position: absolute;
+  top: 30px;
+  left: 50px; 
+  z-index: 1;
+}
+
+span.slide_title a:link, a:visited, a:active {
+  color: #dcdcdc;
+  font-family: Cervo-Regular;
+  transition-duration: 250ms;
+}
+
+span.slide_title a:hover {
+  text-decoration: underline;
+}
+
+.slide_bg{
+  font-size: 42px;
+  color: #dcdcdc;
+  opacity: 0.75;
+  position: relative;
+}
+
+.carousel-controls .prev{
+  display: inline-block;
+  height: 32px;
+  width: 32px;
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-image: url('../../images/carousel_prev.svg');
+  background-position: center;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  opacity: .5;
+}
+
+.carousel-controls .next{
+  display: inline-block;
+  height: 32px;
+  width: 32px;
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-image: url('../../images/carousel_next.svg');
+  background-position: center;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  opacity: .5;
+}
+
+.prev:hover, .next:hover{
+  opacity: 1;
+}
+
+.carousel-indicators{
+  position: absolute;
+  bottom: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+.carousel-indicators span{
+  display: inline-block;
+  background-color: white;
+  width: 30px;
+  height: 4px;
+  border-radius: 2px;
+  opacity: .5;
+  cursor: pointer;
+  margin: 3px;
+}
+
+.carousel-indicators span.active{
+  opacity: 1;
+}
