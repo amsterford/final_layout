@@ -1,0 +1,50 @@
+@font-face {
+    font-family: Jellee;
+    src: url("../../utils/Jellee-Roman.otf");
+}
+
+@font-face {
+    font-family: Cervo-Regular;
+    src: url("../../utils/Cervo-Regular.otf");
+}
+
+@font-face {
+    font-family: Cervo-Medium;
+    src: url("../../utils/Cervo-Medium.otf");
+}
+
+@import url("../css/null.css");
+@import url("../css/carousel.css");
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 0 auto;
+}
+
+$color_dark: #222;
+$color_light: #dadada;
+$color_accent: #47b9c5;
+$color_active: #fec20e;
+$color_main-bg: #ebebeb;
+$color_footer-text: #bebebe;
+
+%link_content {
+    text-decoration: underline;
+}
+
+@mixin rMax($mediamaxwidth, $padding, $maxwidth){
+    @media screen and (max-width: $mediamaxwidth) {
+        max-width: $maxwidth;
+        padding: $padding;
+    }
+}
+
+@import "header";
+
+@import "main";
+
+@import "footer";
+
+@import "responsive";
