@@ -432,6 +432,9 @@ form {
     margin-bottom: 15px;
     width: 100%;
     outline: 0;
+    &::placeholder {
+        color: $color_dark;
+    }
 }
 
 .feedback-input:focus {
@@ -445,7 +448,11 @@ textarea {
     font-family: Cervo-Regular;
     height: 150px;
     line-height: 150%;
+    color: $color_dark;
     resize: vertical;
+    &::placeholder {
+        color: $color_accent;
+    }
 }
 
 [type="submit"] {
